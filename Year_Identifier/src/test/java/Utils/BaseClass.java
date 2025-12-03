@@ -12,22 +12,20 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class BaseClass {
-    public static WebDriver driver;
-    public static WebDriverWait wait;
-    public static Actions actions;
-
-    @BeforeClass
-    @Test
-    public void BrowserSetUP(){
-        ChromeOptions options = new ChromeOptions();
-        driver = new ChromeDriver(options);
-        driver.manage().window().maximize();
-        actions = new Actions(driver);
-    }
-
-    @AfterClass
-    public void TearDown(){
-        driver.quit();
-    }
-}
+//public class BaseClass {
+//    public static WebDriver driver;
+//    public static WebDriverWait wait;
+//    public static Actions actions;
+//
+//    public void BrowserSetUP(){
+//        ChromeOptions options = new ChromeOptions();
+//        driver = new ChromeDriver(options);
+//        driver.manage().window().maximize();
+//        actions = new Actions(driver);
+//    }
+//
+//    @AfterClass
+//    public void TearDown(){
+//        driver.quit();
+//    }
+//}
